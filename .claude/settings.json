@@ -1,0 +1,53 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Write(logs/*)",
+      "Glob(**)",
+      "Grep(**)",
+      "Bash(date *)",
+      "Bash(wc *)",
+      "Bash(jq *)",
+      "Bash(cat logs/*)",
+      "Bash(cat config/*)",
+      "Bash(echo * >> logs/*)",
+      "WebSearch",
+      "WebFetch(domain:*)",
+      "Skill(*)",
+      "Agent(*)"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '{\"hookSpecificOutput\":{\"hookEventName\":\"SessionStart\",\"additionalContext\":\"[univbot] School: %s | Time: %s | Personas: %s | Use /genz to operate.\"}}' \"$(cat config/active-school.txt 2>/dev/null || echo 'not set')\" \"$(date '+%Y-%m-%d %H:%M %Z')\" \"$(cat config/personas.json 2>/dev/null | jq -r '.active | join(\", \")' 2>/dev/null || echo 'none')\""
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "printf '{\"hookSpecificOutput\":{\"hookEventName\":\"UserPromptSubmit\",\"additionalContext\":\"[univbot] Active school: %s\"}}' \"$(cat config/active-school.txt 2>/dev/null || echo 'not set')\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"$(date '+%Y-%m-%dT%H:%M:%S') session-stop\" >> logs/session-activity.log 2>/dev/null || true"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ucla",
+  "name": "University of California, Los Angeles",
+  "location": {
+    "city": "Los Angeles",
+    "state": "CA",
+    "region": "california"
+  },
+  "culture": {
+    "sports_intensity": "high",
+    "greek_life": "moderate",
+    "weather_type": "sunny_year_round",
+    "urban_rural": "urban"
+  },
+  "local_slang": ["bruins", "8-clap", "westwood", "the hill", "south campus grind"],
+  "local_food": [
+    "Diddy Riese",
+    "Fat Sal's",
+    "Bruin Plate",
+    "Chick-fil-A at Ackerman",
+    "Boba at Half & Half",
+    "In-N-Out on Gayley"
+  ],
+  "local_landmarks": [
+    "Janss Steps",
+    "Powell Library",
+    "Royce Hall",
+    "Pauley Pavilion",
+    "Sculpture Garden",
+    "Drake Stadium",
+    "YRL (Young Research Library)"
+  ],
+  "rivals": ["usc"],
+  "meme_themes": [
+    "USC rivalry (Beat SC)",
+    "hill dorms vs plaza dorms",
+    "south campus vs north campus",
+    "65°F and everyone's in jackets",
+    "Diddy Riese line at midnight",
+    "parking apocalypse",
+    "quarter system pain",
+    "Westwood rent prices"
+  ],
+  "counseling_url": "https://counseling.ucla.edu",
+  "academic_calendar": {
+    "semester_system": "quarter",
+    "fall_start": "late September",
+    "fall_finals": "mid December",
+    "winter_start": "early January",
+    "winter_finals": "mid March",
+    "spring_start": "late March",
+    "spring_finals": "mid June"
+  }
+}

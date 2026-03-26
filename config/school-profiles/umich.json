@@ -1,0 +1,52 @@
+{
+  "id": "umich",
+  "name": "University of Michigan",
+  "location": {
+    "city": "Ann Arbor",
+    "state": "MI",
+    "region": "midwest"
+  },
+  "culture": {
+    "sports_intensity": "extreme",
+    "greek_life": "moderate",
+    "weather_type": "harsh_winter",
+    "urban_rural": "college_town"
+  },
+  "local_slang": ["go blue", "the diag", "the big house", "north campus exile", "bursley babes"],
+  "local_food": [
+    "Zingerman's Deli",
+    "Frita Batidos",
+    "Tomukun Noodle Bar",
+    "New York Pizza Depot",
+    "Insomnia Cookies",
+    "Sweetwaters Coffee"
+  ],
+  "local_landmarks": [
+    "The Diag",
+    "Michigan Stadium (The Big House)",
+    "Law Quad",
+    "The Arb",
+    "Hatcher Library",
+    "Shapiro Library",
+    "CCRB"
+  ],
+  "rivals": ["ohio_state"],
+  "meme_themes": [
+    "Ohio State rivalry",
+    "North Campus is Siberia",
+    "EECS workload",
+    "squirrels on the Diag",
+    "Michigan winter survival",
+    "parking is a myth",
+    "Ross School energy",
+    "Blue Bus wait times"
+  ],
+  "counseling_url": "https://caps.umich.edu",
+  "academic_calendar": {
+    "semester_system": "semester",
+    "fall_start": "late August",
+    "fall_finals": "mid December",
+    "winter_start": "early January",
+    "winter_finals": "late April"
+  }
+}

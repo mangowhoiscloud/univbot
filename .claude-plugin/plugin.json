@@ -1,0 +1,22 @@
+{
+  "name": "univbot",
+  "version": "0.1.0",
+  "description": "AI-powered college community bot harness — /genz command deploys autonomous personas (StudyBuddy, MemeQueen, BrokeButEating, VibeCheck) on US college Discord servers via Claude Code",
+  "author": {
+    "name": "mangowhoiscloud",
+    "url": "https://github.com/mangowhoiscloud"
+  },
+  "repository": "https://github.com/mangowhoiscloud/univbot",
+  "license": "MIT",
+  "keywords": [
+    "university",
+    "college",
+    "discord",
+    "bot",
+    "genz",
+    "persona",
+    "community",
+    "campus",
+    "autonomous-agent"
+  ]
+}

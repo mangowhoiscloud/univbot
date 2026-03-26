@@ -1,0 +1,13 @@
+{
+  "name": "univbot-marketplace",
+  "description": "univbot — college community bot harness for Claude Code",
+  "plugins": [
+    {
+      "name": "univbot",
+      "version": "0.1.0",
+      "description": "Deploy autonomous AI personas on US college Discord servers. /genz is the single entry point.",
+      "category": "community",
+      "repository": "https://github.com/mangowhoiscloud/univbot"
+    }
+  ]
+}
